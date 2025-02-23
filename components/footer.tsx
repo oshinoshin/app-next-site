@@ -1,3 +1,10 @@
+import { Logo } from '@/components/logo';
+
 export function Footer() {
-    return <footer>FOOTER</footer>;
+    return (
+        <footer>
+            FOOTER
+            <Logo />
+        </footer>
+    );
 }

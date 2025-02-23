@@ -4,7 +4,7 @@ import { Nav } from '@/components/nav';
 export function Header() {
     return (
         <header>
-            <Logo />
+            <Logo boxOn />
             <Nav />
         </header>
     )

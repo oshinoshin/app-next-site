@@ -1,15 +1,17 @@
+import styles from "@/styles/hero.module.css";
+
 interface HeroProps {
     title: string;
     subtitle: string;
-    imageOn?: boolean
+    imageOn?: boolean;
 }
 
-export function Hero({ title, subtitle, imageOn=false }: HeroProps) {
+export function Hero({ title, subtitle, imageOn = false }: HeroProps) {
     return (
-        <>
-            <h1>{title}</h1>
-            <p>{subtitle}</p>
+        <div className={styles.text}>
+            <h1 className={styles.title}>{title}</h1>
+            <p className={styles.subtitle}>{subtitle}</p>
             {imageOn && <figure> [画像] </figure>}
-        </>
+        </div>
     );
 }
